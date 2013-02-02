@@ -1,7 +1,6 @@
 CssApp::Application.routes.draw do
-  get "echo_controller/echo"
-
-  get "echo_controller/show"
+  
+  get "static_pages/bootstrap"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
