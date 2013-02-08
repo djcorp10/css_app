@@ -1,6 +1,8 @@
 CssApp::Application.routes.draw do
   
-  get "static_pages/bootstrap"
+  root to: 'static_pages#bootstrap'
+
+  match '/news',    to:   'static_pages#news'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
