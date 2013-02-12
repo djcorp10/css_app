@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CssApp</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+	<title>CssApp</title>
+	<%= stylesheet_link_tag    "application", :media => "all" %>
+	<%= javascript_include_tag "application" %>
+	<%= csrf_meta_tags %>
+
+	<link href="/assets/bootstrap.css" rel="stylesheet" type="text/css"/>
+	<link href="/assets/google-code-prettify/prettify.css" rel="stylesheet">
+	<link href="/assets/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="/assets/boostrap-responsive.css" rel="stylesheet" type="text/css">
+	<link href="/assets/docs.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
-<%= yield %>
+	<%= yield %>
+
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="/assets/bootstrap.js"></script>
+	<link href="/assets/bootstrap.css" rel="stylesheet" type="text/css">
+
+	<script src="/twitter-bootstrap/twitter-bootstrap-v2/docs/assets/js/jquery.js"></script>
+	<script src="/twitter-bootstrap/twitter-bootstrap-v2/docs/assets/js/bootstrap-tab.js"></script> 
+
+	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+	<script src="/assets/jquery.js"></script>
 
 </body>
 </html>

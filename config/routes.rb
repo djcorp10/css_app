@@ -1,8 +1,12 @@
 CssApp::Application.routes.draw do
   
+  resources :requirements
+
   root to: 'static_pages#bootstrap'
 
-  match '/news',    to:   'static_pages#news'
+  match '/news',    to:   'news#display'
+
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

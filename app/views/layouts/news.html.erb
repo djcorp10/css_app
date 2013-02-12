@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<HTML>
+	<head>
+		<title>David's Sports News</title>
+  		<%= stylesheet_link_tag "application", :media => "all" %>
+  		<%= javascript_include_tag "application" %>
+  		<%= csrf_meta_tags %>
+	</head>
+	<body>
+		<div class="center hero-unit">
+
+			<div class="row">
+				<div class="container">
+								<div class="page-header">
+									<h1>Sports News</h1>
+								</div>
+
+					<div class="row">
+						<div class="span9">
+
+									<div class="row">
+										<%= render "nav_tabs" %>
+									</div>
+
+									<div class="row">
+										<%= render "table" %>
+									</div>
+
+									<div class="row">
+										<%= render "notes" %>
+									</div>
+								
+
+							</div>
+							<div class="span3" id="sidebar">
+								<%= render "sidebar" %>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</body>
+		</HTML>

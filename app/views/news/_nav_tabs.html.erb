@@ -1,0 +1,33 @@
+<div class="tabbable">
+	<ul class="nav nav-tabs">
+		<li class="active"><a href="#pane1" data-toggle="tab">Football</a></li>
+
+		<li><a href="#pane2" data-toggle="tab">Basketball</a></li>
+
+		<li><a href="#pane3" data-toggle="tab">Baseball</a></li>
+
+		<li><a href="#pane4" data-toggle="tab">Soccer</a></li>
+	</ul>
+	<div class="tab-content">
+		<div id="pane1" class="tab-pane active">
+			<h4>Football News</h4>
+			<h1><%== image_tag("http://espn.go.com/photo/2012/1218/nfl_a_peterson_wm_600.jpg") %></h1>
+			<p><%= @football.html_safe %></p>
+		</div>
+		<div id="pane2" class="tab-pane">
+			<h4>Basketball News</h4>
+			<h1><%== image_tag("http://thebestten.files.wordpress.com/2009/11/michael_jordan014.jpg") %></h1>
+			<p><%= @basketball.html_safe %></p>
+		</div>
+		<div id="pane3" class="tab-pane">
+			<h4>Baseball News</h4>
+			<h1><%== image_tag("http://collider.com/wp-content/uploads/jackie-robinson-biopic-42.jpg") %></h1>
+			<p><%= @baseball.html_safe %></p>
+		</div>
+		<div id="pane4" class="tab-pane">
+			<h4>Soccer News</h4>
+			<h1><%== image_tag("http://static.guim.co.uk/sys-images/Sport/Pix/pictures/2012/12/18/1355827891597/Barcelonas-Lionel-Messi-c-008.jpg") %></h1>
+			<p><%= @soccer.html_safe %></p>
+		</div>
+	</div><!-- tab-content -->
+</div>
